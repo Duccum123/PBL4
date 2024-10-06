@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page isELIgnored="false" %>
 
 <!DOCTYPE html>
@@ -332,7 +331,7 @@
                                 <a href="" class="auth-form__help-link auth-form__help-link--forgot">
                                     Quên mật khẩu
                                 </a>
-                                <span href="" class="auth-form__help-link--separate">|</span>
+                                <span class="auth-form__help-link--separate">|</span>
                                 <a href="" class="auth-form__help-link">
                                     Cần trợ giúp?
                                 </a>

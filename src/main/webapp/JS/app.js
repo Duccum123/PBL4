@@ -1,10 +1,17 @@
 
 
+
+
 // Kết nối WebSocket
-const ws = new WebSocket("ws://localhost:8080/demo/chat");
+const ws = new WebSocket("ws://localhost:8080/demo/hello");
 ws.onopen = function () {
     console.log("WebSocket is open now.");
 };
+
+ws.onerror = function(error) {
+  console.error('Không thể kết nối tới WebSocket endpoint:', error);
+};
+
 ws.onmessage = function (event) {
     let listChairHold = JSON.parse(event.data);
     const Chairs = document.querySelectorAll(".item-square");
